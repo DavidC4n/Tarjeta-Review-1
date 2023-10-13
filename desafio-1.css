@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     
+}
+/*redefine los márgenes, el relleno y el modelo de caja para todos los elementos de la página.*/
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #6C7DD9;
+    font-family: 'Nunito', sans-serif; 
+    padding: 0 20px;
+}
+/* aplica estilos de centrado y diseño flexible para un contenedor principal. 
+Configura la altura al 100% de la ventana, define un fondo y selecciona una fuente de texto, 
+además de agregar relleno horizontal. */
+
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background: #F2F2F2;
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, .2);
+}
+/* utiliza flexbox para el diseño.Establece un ancho fijo y una altura automática. 
+   Define un fondo y agrega bordes redondeados 
+   y una sombra suave para crear una tarjeta con estilo. */
+
+
+.header{
+    border-right: 1px solid #ddd;
+}
+/* establece un borde a la derecha de la cabecera. */
+
+
+.descripción{
+    background: #fbfbfb;
+}
+
+
+.header, .descripcion{
+    padding:20px;
+    text-align: center;
+}
+/* aplican 20px de relleno y centran el texto en el centro. */
+
+.header a{
+    position: relative;
+    display: block;
+}
+/* configura el enlace dentro de la cabecera como elemento de bloque y establece una posición relativa. */
+
+
+img {
+    width: 200px;
+    height: 200px;
+  }
+ /* Establece un tamaño de 200x200 píxeles para la imagen.*/
+  
+
+.header img {
+    border-radius: 50%; /* Redondea la imagen */
+    box-shadow: 0 0 0 8px rgba(0, 0, 0, .6); /* Agrega una sombra */
+    margin: 20px 30px; /* Establece márgenes */
+    transition: .2s; /* Agrega una transición de 0.2 segundos */
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px rgba(0, 0, 0, .1);
+}
+
+.header h2{
+    color: #F25C05;
+}
+
+.header h4{
+    margin-bottom: 20px;
+}
+
+.descripción p{
+    margin: 20px 30px;
+}
